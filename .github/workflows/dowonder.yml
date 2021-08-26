@@ -12,3 +12,8 @@ jobs:
         run: |
           npm -v
           echo "Checked NPM Version"
+      - name: Python
+        run: |
+          import platform
+          print(platform.processor())
+        shell: Python  
