@@ -8,3 +8,7 @@ jobs:
     steps:
       - name: One Command
         run: echo "Master"
+      - name: Multi commands
+        run: |
+          npm -v
+          echo "Checked NPM Version"
