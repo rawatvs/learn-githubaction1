@@ -3,7 +3,7 @@ name: Action1
 on: push
 
 jobs: 
-  action1job:
+  action1job: 
     runs-on: ubuntu-latest
     steps:
       - name: One Command
@@ -17,4 +17,13 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+
+  Windows-One: 
+    runs-on: windows-latest
+    steps: 
+      - name: Powershell
+        run: Get-Location
+
+
+
         
