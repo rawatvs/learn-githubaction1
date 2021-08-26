@@ -4,7 +4,7 @@ on: push
 
 jobs: 
   action1job:
-    runs-on: Ubuntu-latest
-    Steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: One Command
         run: echo "Master"
