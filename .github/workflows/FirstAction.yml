@@ -1,0 +1,11 @@
+name: Running First Action
+
+on: push
+
+jobs:
+  actionplaytime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GreetMe
+        uses: actions/hello-world-javascript-action@v1
+        with: Vipin
