@@ -21,7 +21,7 @@ jobs:
   
   simplepush_windows:
     runs-on: windows-latest
-    step:
+    steps:
       - name: RunPowershell
         run: Get-Location
       - name: Bash-In-Window
