@@ -1,0 +1,18 @@
+name: checkoutme
+
+on: push
+
+jobs:
+  trustcheckout:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Before Checkout
+        run: |
+          pwd
+          ls -lrta
+      - name: Run Checkout
+        uses: actions/checkout@v2.1.1
+      - name: AfterCheckout
+        run: |
+          pwd
+          ls -lrta
