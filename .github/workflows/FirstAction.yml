@@ -14,4 +14,5 @@ jobs:
 
       - name: OutputAction
         run: |
-          echo "Greeting was made on "${{ steps.outp.outputs.time }}""
+          echo "Greeting was made on"
+          echo "${{ steps.outp.outputs.time }}""
