@@ -4,30 +4,30 @@ on: push
 
 jobs:
   simplepush_linux:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Single Line Command
-      run: ls -lrt
-    - name: Multi line Command
-      run: |
-        echo "Print Command out of ls -lrt"
-        ls -lrt
-    - name: Python shell
-      run: |
-        import platform
-        print(platform.processor())
-      shell: python
+    runs-on: ubuntu-latest
+    steps:
+      - name: Single Line Command
+        run: ls -lrt
+      - name: Multi line Command
+        run: |
+          echo "Print Command out of ls -lrt"
+          ls -lrt
+      - name: Python shell
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
 
   
-simplepush_windows:
-  runs-on: windows-latest
-  step:
-    - name: RunPowershell
-      run: Get-Location
-    - name: Bash-In-Window
-      run: |
-        echo " From Windows Bash"
-        pwd
-      shell: bash
+  simplepush_windows:
+    runs-on: windows-latest
+    step:
+      - name: RunPowershell
+        run: Get-Location
+      - name: Bash-In-Window
+        run: |
+          echo " From Windows Bash"
+          pwd
+        shell: bash
 
   
