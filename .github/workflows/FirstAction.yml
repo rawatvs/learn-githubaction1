@@ -10,9 +10,9 @@ jobs:
         id: outp
         uses: actions/hello-world-javascript-action@v1
         with: 
-          who-to-greet: Vipin
+          who-to-greet: Vipin Rawat
 
-      - name: OutputAction
+      - name: OutputAction1s11aada
         run: |
           echo "Greeting was made on"
           echo "${{ steps.outp.outputs.time }}""
