@@ -8,4 +8,5 @@ jobs:
     steps:
       - name: GreetMe
         uses: actions/hello-world-javascript-action@v1
-        with: Vipin
+        with: 
+          who-to-greet: Vipin
