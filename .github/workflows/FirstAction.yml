@@ -7,6 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: GreetMe
+        id: outp
         uses: actions/hello-world-javascript-action@v1
         with: 
           who-to-greet: Vipin
+
+      - name: OutputAction
+        run: |
+          echo "Greeting was made on "{{steps.outp.outputs.time}}""
